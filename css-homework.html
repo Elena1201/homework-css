@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>報導者THE REPORTER</title>
     <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap');
+
         body{
             box-sizing: border-box;
             margin: 0;
             padding: 0;
             font-size: 0;
         }
-
+        
         .header{
             padding: 24px;
             display: flex;
@@ -45,15 +48,15 @@
             width: 100%;
             height: auto;
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: stretch;
             background-color: rgb(242, 242, 242);
         }
 
         .latest-section{
-            width: 299px;
+            width: 170px;
             height: auto;
-            padding: 30px 16px;
+            padding: 30px 10px;
         }
 
         .latest-section a{
@@ -75,7 +78,7 @@
         
         .latest-content-subject{
             line-height: 1.4;
-            width:88%;
+            /* width:88%; */
             margin: 0 auto;
 
         }
@@ -90,9 +93,77 @@
             font-size: 16px;
             font-weight: 700;
             color: rgb(74, 73, 73);
+            font-family:'Noto Serif TC', serif ;
+        }
+/* -------------------------------------------------------- */
+        .container{
+            width: 100%;
+            height: auto;
+            
         }
 
+        .section-name{
+            width: 100%;
+            font-size: 12px;
+            font-weight: 700;
+            color:rgb(255, 255, 255) ;
+            /* line-height: 2; */
+            text-align: center;
+            margin-top: -10px;
+        }
+
+        .section-name span{
+            background-color: rgb(196, 12, 35);
+            padding: 0px 5px;
+        }
+
+        .section-category-name{
+            width: 100%;
+        }
+
+        .section-category-name h2{
+            font-size: 12px;
+            color:rgb(196, 12, 35) ;
+            /* line-height: 1.33; */
+            text-align: center;
+        }
+
+        .section-content-card{
+            margin: 0;
+            padding: 30px 35px;
+            
+        }
+        .section-content-card a {
+            text-decoration: none;
+            text-align: center;
+        }
+        .title{
+
+        }
+        .section-content-card .title h1{
+            width: 100%;
+            font-size: 24px;
+            color: black;
+            font-family:'Noto Serif TC', serif ;
+        }
         
+        .text-overflow h1::after{
+            content: "...";
+        }
+
+        .section-content-card .title p{
+            font-size: 16px;
+            color: black;
+            line-height: 1.4;
+        }
+
+        .card-img{
+            width: 100%;
+        }
+        .card-img img{
+            width: 100%;
+
+        }
     </style>
 </head>
 <body>
@@ -119,12 +190,14 @@
                     </svg>
             </a>
         </div>
+
         <div class="support">
             <a href="https://support.twreporter.org/">
                 <h1>贊助</h1>
             </a>
         </div>
     </div>
+
     <div class="latest">
         <div class="latest-section">
             <a class="coral" href="https://www.twreporter.org/a/photo-the-mystery-of-coral-spawning">
@@ -143,6 +216,7 @@
             </div>
             </a>
         </div>
+
         <div class="latest-section">
             <a class="sport" href="https://www.twreporter.org/a/saturday-features-long-game-issa-2022">
             <div class="latest-content">
@@ -161,14 +235,126 @@
             </a>
         </div>
     </div>
-    <div class="editorpick">
+
+    <div class="section-name">
+        <span>編輯精選</span>
+    </div>
+
+    <div class="container">
         <div class="section-content-wrapper">
-            <div class="section-name">
-                <span>編輯精選</span>
+            <div class="section-content-card">
+                <div class="section-category-name">
+                    <h2>人權·社會</h2>
+                </div>
+                <a class="section-content-a" href="https://www.twreporter.org/a/sexual-assault-in-youth-welfare-institutes-and-campus-research-start">
+                <div class="card-title text-overflow ">
+                    <div class="title  ">
+                        <h1>
+                            「信任的人，卻背叛了我」──國家首次啟動兒少安置機構及校園性侵訪查，聆聽被害人聲音
+                        </h1>
+                        <p>
+                            《報導者》獨家採訪台東安置機構主任涉嫌性侵案的吹哨者，反映現行制度漏洞為何使權勢性侵層出不窮、受害者處境難以被聽見？今日，國家人權委員會也展開國家首度「兒少安置機構及校園性侵」訪查，盼改善制度，讓傷害不再重演。
+                        </p>
+                    </div>
+                </div>
+                <div class="card-img">
+                    <img src="images/section-content-card1.png" alt="">
+                </div>
+                </a>
             </div>
-            <div class="section-content">
-                <a class="editorpick" href="https://www.twreporter.org/a/interview-nathan-kwun-chung-law-2022">
-                
+
+            <div class="section-content-card">
+                <div class="section-category-name">
+                    <h2>國際·社會</h2>
+                </div>
+                <a class="section-content-a" href="https://www.twreporter.org/a/interview-nathan-kwun-chung-law-2022">
+                <div class="title text-overflow">
+                    <h1>
+                        七一前夕，專訪流亡者羅冠聰：努力不讓香港認同和抗爭記憶被抹去
+                    </h1>
+                    <p>
+                        流亡者的「自由」，是一種承載巨大責任的頑抗姿態。或許流亡者人生中冀望的另類浪漫，就是努力讓香港的過去，現在、未來不被遺忘。
+                    </p>
+                </div>
+                <div class="card-img">
+                    <img src="images/section-content-card2.jpg" alt="">
+                </div>
+                </a>
+            </div>
+
+            <div class="section-content-card">
+                <div class="section-category-name">
+                    <h2>政經·產業</h2>
+                </div>
+                <a class="section-content-a" href="https://www.twreporter.org/a/flipping-properties-tainan">
+                <div class="title text-overflow">
+                    <h1>
+                        一場正改變台南古都風貌的大富翁遊戲：熱錢、炒作、土地開發
+                    </h1>
+                    <p>
+                        這3年來，台南正上演一場房產演化史，更「榮登」去年全台房價漲幅最高的城市。隨著台積電進駐南科，萬丈高樓與房價皆平地拔起。當打炒房修法還躺在立法院，預售屋換約炒作依舊橫行⋯⋯
+                    </p>
+                </div>
+                <div class="card-img">
+                    <img src="images/section-content-card3.jpg" alt="">
+                </div>
+                </a>
+            </div>
+
+            <div class="section-content-card">
+                <div class="section-category-name">
+                    <h2>國際·兩岸</h2>
+                </div>
+                <a class="section-content-a" href="https://www.twreporter.org/a/hello-world-2022-06-27">
+                <div class="title text-overflow">
+                    <h1>
+                        衝擊2,516萬女性的墮胎權大戰：美國大法官推翻〈羅訴韋德案〉的代價？
+                    </h1>
+                    <p>
+                        美國聯邦最高法院以何理由推翻1973年的決定？〈羅訴韋德案〉的消滅，將讓美國女性、特別是生活在墮胎非法州的意外懷孕者付出多大「人生代價」？下一個爭議釋憲戰場，將是同性關係、多元成家與避孕問題？
+                    </p>
+                </div>
+                <div class="card-img">
+                    <img src="images/section-content-card4.jpg" alt="">
+                </div>
+                </a>
+            </div>
+
+            <div class="section-content-card">
+                <div class="section-category-name">
+                    <h2>文化·藝術</h2>
+                </div>
+                <a class="section-content-a" href="https://www.twreporter.org/a/taiwan-comic-new-era-europe-market">
+                <div class="title text-overflow">
+                    <h1>
+                        亞洲不只有日漫──在歐洲試圖找到定位，「複雜又迷人」的台漫面貌重塑中
+                    </h1>
+                    <p>
+                        台灣的國姓爺、台北都會女子、殯葬業禮儀⋯台灣新銳漫畫家的創作在法國市場漸漸發光，台漫授權法國比例在兩年間從2.44%提高至16.67％。這些作品為什麼吸引法國出版社？
+                    </p>
+                </div>
+                <div class="card-img">
+                    <img src="images/section-content-card5.jpeg" alt="">
+                </div>
+                </a>
+            </div>
+
+            <div class="section-content-card">
+                <div class="section-category-name">
+                    <h2>生活·醫療</h2>
+                </div>
+                <a class="section-content-a" href="https://www.twreporter.org/a/covid-19-omicron-children-encephalopathy-case">
+                <div class="title text-overflow">
+                    <h1>
+                        醫療艱困區的奇蹟男孩：雲林若瑟、台大醫院「區域聯防」救回6歲Omicron腦炎重症兒
+                    </h1>
+                    <p>
+                        兒童急性腦炎病程進展快速猛烈，雲林案例讓人振奮的是，展現醫療支援和整合的另一種思維，不是以醫院為中心、而是「以病人為中心」，將醫學中心資源「導入」在地，為重症病童爭取了更多時間和勝算。
+                    </p>
+                </div>
+                <div class="card-img">
+                    <img src="images/section-content-card6.jpg" alt="">
+                </div>
                 </a>
             </div>
         </div>
